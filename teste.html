@@ -1,11 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Futebol Dos Amigos</title>
-  </head>
-  <body>
-    <h1>Pagina Teste</h1>
-  </body>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Futebol de Quarta-feira</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #2e8b57;
+      color: white;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+    section {
+      padding: 50px;
+      text-align: center;
+    }
+    #video {
+      background-color: #333;
+    }
+    iframe {
+      width: 80%;
+      height: 450px;
+      max-width: 1000px;
+      border: none;
+    }
+    #champion-photo {
+      background-color: #fff;
+      padding: 20px;
+    }
+    #champion-photo img {
+      width: 90%;
+      max-width: 1000px;
+      height: auto;
+      border-radius: 10px;
+      border: 2px solid #2e8b57;
+    }
+    #carousel {
+      background-color: #fff;
+      padding: 20px;
+    }
+    #players-carousel {
+      display: flex;
+      overflow-x: auto;
+      white-space: nowrap;
+      scroll-behavior: smooth;
+      padding-bottom: 10px;
+    }
+    .player {
+      display: inline-block;
+      margin: 0 10px;
+    }
+    .player img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 2px solid #2e8b57;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #2e8b57;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #006400;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Seção 1: Capa -->
+<header>
+  <h1>Futebol de Quarta-feira</h1>
+</header>
+
+<!-- Seção 2: Vídeo do último jogo -->
+<section id="video">
+  <h2>Último jogo gravado</h2>
+  <iframe src="https://www.youtube.com/embed/SEU_VIDEO_ID" title="Último Jogo"></iframe>
+</section>
+
+<!-- Seção 3: Foto do time campeão -->
+<section id="champion-photo">
+  <h2>Atual Campeão</h2>
+  <img src="https://www.boqnews.com/wp-content/uploads/2021/07/sp-2005-e1626961959216.jpeg" alt="Time Campeão">
+</section>
+
+<!-- Seção 4: Carrossel de Jogadores -->
+<section id="carousel">
+  <h2>Jogadores</h2>
+  <div id="players-carousel">
+        <div class="player">
+      <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" alt="Jogador 1">
+    </div>
+    <div class="player">
+      <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" alt="Jogador 2">
+    </div>
+    <div class="player">
+      <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" alt="Jogador 3">
+    </div>
+    <div class="player">
+      <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" alt="Jogador 4">
+    </div>
+    <div class="player">
+      <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" alt="Jogador 5">
+    </div>
+    <div class="player">
+      <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" alt="Jogador 6">
+    </div>
+    <div class="player">
+      <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" alt="Jogador 7">
+    </div>
+    <div class="player">
+      <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" alt="Jogador 8">
+    </div>
+    <div class="player">
+      <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" alt="Jogador 9">
+    </div>
+    <div class="player">
+      <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" alt="Jogador 10">
+    </div>
+    <div class="player">
+      <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" alt="Jogador 11">
+    </div>
+    <div class="player">
+      <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" alt="Jogador 12">
+    </div>
+    <div class="player">
+      <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" alt="Jogador 13">
+    </div>
+    <div class="player">
+      <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" alt="Jogador 14">
+    </div>
+    <div class="player">
+      <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" alt="Jogador 15">
+    </div>
+    <div class="player">
+      <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" alt="Jogador 16">
+    </div>  
+  </div>
+  <button onclick="scrollCarousel()">Próximo</button>
+</section>
+
+<script>
+  function scrollCarousel() {
+    document.getElementById('players-carousel').scrollBy({ 
+      left: 300, 
+      behavior: 'smooth' 
+    });
+  }
+</script>
+
+</body>
 </html>
