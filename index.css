@@ -1,16 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&family=Pacifico&family=Raleway:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&family=Pacifico&family=Raleway:ital@0;1&family=Reddit+Sans+Condensed:wght@200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&family=Pacifico&family=Raleway:ital@0;1&family=Reddit+Sans+Condensed:wght@200..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-h1 {
-  color: #000;
-  background-color: #bcbaba;
-  text-align: center;
-}
-span {
-  color: rgb(247, 76, 227);
 }
 
 body {
@@ -21,12 +15,99 @@ body {
   height: 100vh;
 }
 
+h1 {
+  color: #000;
+  background-color: rgb(172, 108, 172, 0.4);
+  text-align: center;
+  padding: 30px;
+  font-family: "Nerko One", cursive;
+  font-size: 60px;
+  min-width: 500px;
+  margin-top: 30px;
+  border-bottom: 4px solid black;
+}
+span {
+  color: rgb(247, 76, 227);
+}
+
 nav {
+  display: flex;
   margin-top: 50px;
+  justify-content: end;
+  justify-content: space-around;
 }
 
 a {
-  color: #ffff;
-  padding: 1rem;
+  font-family: "Nerko One", cursive;
+  text-align: center;
+  color: whitesmoke;
+  padding: 2rem;
+  margin-right: 20px;
+  line-height: 40px;
   font-size: 1.5rem;
+  font-weight: 700;
+  background-image: linear-gradient(to right, black, rgb(247, 76, 227));
+  border: 4px solid black;
+  border-radius: 9px;
+}
+
+a:hover {
+  color: rgb(208, 95, 183);
+}
+
+.mensalistas {
+  padding: 20px;
+  margin-top: 300px;
+}
+
+.mensalistas__title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-family: "Roboto Mono", monospace;
+  color: #888;
+}
+
+.mensalistas__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 cards por linha */
+  gap: 20px;
+}
+
+.mensalistas__card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: center;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.mensalistas__card:hover {
+  transform: scale(1.05);
+}
+
+.mensalistas__card-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.mensalistas__card-name {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.mensalistas__card-team {
+  color: #888;
+}
+
+.time__preto {
+  background-color: #00000096;
+}
+
+.time__rosa {
+  background-color: rgb(208, 95, 183, 0.4);
 }
