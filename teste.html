@@ -4,169 +4,119 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Futebol de Quarta-feira</title>
+  
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Opcional: Bootstrap JS e Popper.js CDN (para componentes interativos como dropdowns) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-    }
+    /* Ajustes personalizados adicionais, se necessário */
     header {
       height: 100vh;
+      background-color: #2e8b57;
+      color: white;
+      text-align: center;
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: #2e8b57;
-      color: white;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 3em;
-      margin: 0;
-    }
-    section {
-      padding: 50px;
-      text-align: center;
-    }
-    #video {
-      background-color: #333;
-    }
-    iframe {
-      width: 80%;
-      height: 450px;
-      max-width: 1000px;
-      border: none;
-    }
-    #champion-photo {
-      background-color: #fff;
-      padding: 20px;
     }
     #champion-photo img {
-      width: 90%;
-      max-width: 1000px;
-      height: auto;
       border-radius: 10px;
       border: 2px solid #2e8b57;
-    }
-    #carousel {
-      background-color: #fff;
-      padding: 20px;
-    }
-    #players-carousel {
-      display: flex;
-      overflow-x: auto;
-      white-space: nowrap;
-      scroll-behavior: smooth;
-      padding-bottom: 10px;
-    }
-    .player {
-      display: inline-block;
-      margin: 0 10px;
     }
     .player img {
-      width: 200px;
-      height: 200px;
-      object-fit: cover;
       border-radius: 10px;
       border: 2px solid #2e8b57;
-    }
-    button {
-      margin-top: 20px;
-      padding: 10px 20px;
-      background-color: #2e8b57;
-      color: white;
-      border: none;
-      cursor: pointer;
-      border-radius: 5px;
-    }
-    button:hover {
-      background-color: #006400;
     }
   </style>
 </head>
 <body>
 
 <!-- Seção 1: Capa -->
-<header>
+<header class="d-flex justify-content-center align-items-center">
   <h1>Futebol de Quarta-feira</h1>
 </header>
 
 <!-- Seção 2: Vídeo do último jogo -->
-<section id="video">
-  <h2>Último jogo gravado</h2>
-  <iframe src="https://www.youtube.com/embed/SEU_VIDEO_ID" title="Último Jogo"></iframe>
+<section class="container my-5">
+  <h2 class="text-center">Último jogo gravado</h2>
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-8">
+      <iframe class="embed-responsive embed-responsive-16by9" src="https://www.youtube.com/embed/zf5RhMVfyQQ" allowfullscreen></iframe>
+    </div>
+  </div>
 </section>
 
 <!-- Seção 3: Foto do time campeão -->
-<section id="champion-photo">
-  <h2>Atual Campeão</h2>
-  <img src="https://www.boqnews.com/wp-content/uploads/2021/07/sp-2005-e1626961959216.jpeg" alt="Time Campeão">
+<section class="container my-5">
+  <h2 class="text-center">Atual Campeão</h2>
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-8">
+      <img src="https://www.boqnews.com/wp-content/uploads/2021/07/sp-2005-e1626961959216.jpeg" class="img-fluid" alt="Time Campeão">
+    </div>
+  </div>
 </section>
 
 <!-- Seção 4: Carrossel de Jogadores -->
-<section id="carousel">
-  <h2>Jogadores</h2>
-  <div id="players-carousel">
-        <div class="player">
-      <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" alt="Jogador 1">
+<section class="container my-5">
+  <h2 class="text-center">Jogadores</h2>
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="d-flex justify-content-center">
+          <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" class="d-block mx-3" alt="Jogador 1">
+          <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" class="d-block mx-3" alt="Jogador 2">
+          <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" class="d-block mx-3" alt="Jogador 3">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="d-flex justify-content-center">
+          <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" class="d-block mx-3" alt="Jogador 4">
+          <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" class="d-block mx-3" alt="Jogador 5">
+          <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" class="d-block mx-3" alt="Jogador 6">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="d-flex justify-content-center">
+          <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" class="d-block mx-3" alt="Jogador 7">
+          <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" class="d-block mx-3" alt="Jogador 8">
+          <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" class="d-block mx-3" alt="Jogador 9">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="d-flex justify-content-center">
+          <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" class="d-block mx-3" alt="Jogador 10">
+          <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" class="d-block mx-3" alt="Jogador 11">
+          <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" class="d-block mx-3" alt="Jogador 12">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="d-flex justify-content-center">
+          <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" class="d-block mx-3" alt="Jogador 13">
+          <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" class="d-block mx-3" alt="Jogador 14">
+          <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" class="d-block mx-3" alt="Jogador 15">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="d-flex justify-content-center">
+          <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" class="d-block mx-3" alt="Jogador 16">
+        </div>
+      </div>
     </div>
-    <div class="player">
-      <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" alt="Jogador 2">
-    </div>
-    <div class="player">
-      <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" alt="Jogador 3">
-    </div>
-    <div class="player">
-      <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" alt="Jogador 4">
-    </div>
-    <div class="player">
-      <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" alt="Jogador 5">
-    </div>
-    <div class="player">
-      <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" alt="Jogador 6">
-    </div>
-    <div class="player">
-      <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" alt="Jogador 7">
-    </div>
-    <div class="player">
-      <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" alt="Jogador 8">
-    </div>
-    <div class="player">
-      <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" alt="Jogador 9">
-    </div>
-    <div class="player">
-      <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" alt="Jogador 10">
-    </div>
-    <div class="player">
-      <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" alt="Jogador 11">
-    </div>
-    <div class="player">
-      <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" alt="Jogador 12">
-    </div>
-    <div class="player">
-      <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" alt="Jogador 13">
-    </div>
-    <div class="player">
-      <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" alt="Jogador 14">
-    </div>
-    <div class="player">
-      <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" alt="Jogador 15">
-    </div>
-    <div class="player">
-      <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" alt="Jogador 16">
-    </div>  
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
   </div>
-  <button onclick="scrollCarousel()">Próximo</button>
 </section>
-
-<script>
-  function scrollCarousel() {
-    document.getElementById('players-carousel').scrollBy({ 
-      left: 300, 
-      behavior: 'smooth' 
-    });
-  }
-</script>
 
 </body>
 </html>
