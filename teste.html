@@ -8,13 +8,13 @@
   <!-- Bootstrap CSS CDN -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   
-  <!-- Opcional: Bootstrap JS e Popper.js CDN (para componentes interativos como dropdowns) -->
+  <!-- Opcional: Bootstrap JS e Popper.js CDN -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   
   <style>
-    /* Ajustes personalizados adicionais, se necessário */
+    /* Ajustes personalizados */
     header {
       height: 100vh;
       background-color: #2e8b57;
@@ -24,13 +24,40 @@
       justify-content: center;
       align-items: center;
     }
+
     #champion-photo img {
       border-radius: 10px;
       border: 2px solid #2e8b57;
     }
+
     .player img {
       border-radius: 10px;
       border: 2px solid #2e8b57;
+    }
+
+    /* Ajuste do iframe para ter uma altura adequada */
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+      overflow: hidden;
+      max-width: 100%;
+      background-color: #000;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Estilo para garantir que os botões de controle do carrossel fiquem visíveis */
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+      background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente para visibilidade */
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
     }
   </style>
 </head>
@@ -46,7 +73,9 @@
   <h2 class="text-center">Último jogo gravado</h2>
   <div class="row justify-content-center">
     <div class="col-12 col-md-8">
-      <iframe class="embed-responsive embed-responsive-16by9" src="https://www.youtube.com/embed/zf5RhMVfyQQ" allowfullscreen></iframe>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/zf5RhMVfyQQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
     </div>
   </div>
 </section>
