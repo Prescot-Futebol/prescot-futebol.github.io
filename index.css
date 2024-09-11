@@ -25,6 +25,9 @@ h1 {
   min-width: 500px;
   margin-top: 30px;
   border-bottom: 4px solid black;
+  text-shadow: 2px 2px 0px #fff, -2px 2px 0px #fff, 2px -2px 0px #fff,
+    -2px -2px 0px #fff, 2px 0px 0px #fff, 0px 2px 0px #fff, -2px 0px 0px #fff,
+    0px -2px 0px #fff;
 }
 span {
   color: rgb(247, 76, 227);
