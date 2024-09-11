@@ -21,7 +21,7 @@ h1 {
   text-align: center;
   padding: 30px;
   font-family: "Nerko One", cursive;
-  font-size: 60px;
+  font-size: 4rem;
   min-width: 500px;
   margin-top: 30px;
   border-bottom: 4px solid black;
@@ -44,6 +44,7 @@ a {
   font-family: "Nerko One", cursive;
   text-align: center;
   color: whitesmoke;
+  text-decoration: none;
   padding: 2rem;
   margin-right: 20px;
   line-height: 40px;
