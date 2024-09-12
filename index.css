@@ -14,8 +14,7 @@
   background-image: linear-gradient(to top, rgb(247, 76, 227), #ffff, #000);
   background-repeat: no-repeat;
   background-size: cover;
-  min-width: 1100px;
-  max-width: 1600px;
+  width: 100vw;
 }
 
 h1 {
