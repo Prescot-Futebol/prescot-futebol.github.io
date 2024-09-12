@@ -360,14 +360,11 @@ span {
     width: 100%;
     height: auto;
   }
-  .videos {
-    overflow-x: hidden;
-    max-width: 100vw;
-  }
 
   .video__frame {
-    width: 700px;
-    height: 480px;
+    overflow-x: hidden;
+    max-width: 100vw;
+    height: 50vh;
   }
   .videos__titulo {
     font-size: 2.5rem;
