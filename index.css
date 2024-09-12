@@ -289,3 +289,14 @@ span {
   margin-top: 150px;
   border: 2px solid #fff;
 }
+.footer {
+  text-align: center;
+  padding: 100px;
+  background-color: #007bff;
+}
+
+.footer__text {
+  color: #f4f4f4;
+  font-size: 2rem;
+  font-weight: 600;
+}
