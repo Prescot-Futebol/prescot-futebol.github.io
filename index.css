@@ -24,7 +24,6 @@
   padding: 30px;
   font-family: "Nerko One", cursive;
   font-size: 4rem;
-  min-width: 500px;
   margin-top: 30px;
   border-bottom: 4px solid black;
   text-shadow: 2px 2px 0px #fff, -2px 2px 0px #fff, 2px -2px 0px #fff,
@@ -362,6 +361,10 @@ span {
     width: 100%;
     height: auto;
   }
+  .videos {
+    overflow-x: hidden;
+  }
+
   .video__frame {
     width: 700px;
     height: 480px;
@@ -386,5 +389,10 @@ span {
 
   .footer__text {
     font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .title_ {
+    overflow: hidden;
   }
 }
