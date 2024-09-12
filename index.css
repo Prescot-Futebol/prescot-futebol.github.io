@@ -330,6 +330,7 @@ span {
   .nav__ul {
     flex-direction: column;
     margin-top: 20px;
+    list-style: none;
   }
 
   .link__nav {
