@@ -300,3 +300,74 @@ span {
   font-size: 2rem;
   font-weight: 600;
 }
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+    padding: 15px;
+    margin-top: 10px;
+  }
+
+  .mensalistas {
+    margin-top: 100px;
+  }
+
+  .mensalistas__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .nav__ul {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .link__nav {
+    font-size: 1.2rem;
+    padding: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tabela__jogadores__title,
+  .videos__titulo,
+  .about__tittle {
+    font-size: 2rem;
+    margin-top: 50px;
+  }
+
+  .mensalistas__card-img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .mensalistas__title {
+    font-size: 2.5rem;
+  }
+
+  .tabela-jogadores {
+    width: 100%;
+    height: auto;
+  }
+  .video__frame {
+    width: 700px;
+    height: 400px;
+  }
+  .videos__titulo {
+    font-size: 2.5rem;
+  }
+
+  .time__image {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+  }
+
+  .footer {
+    padding: 50px;
+  }
+
+  .footer__text {
+    font-size: 1.5rem;
+  }
+}
