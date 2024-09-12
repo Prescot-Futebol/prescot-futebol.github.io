@@ -33,29 +33,40 @@ span {
   color: rgb(247, 76, 227);
 }
 
-nav {
+.nav__ul {
   display: flex;
-  margin-top: 50px;
-  justify-content: end;
+  justify-content: center;
   justify-content: space-around;
+  margin-top: 50px;
+}
+.mensal__list:hover {
+  transform: scale(1.05);
+}
+.artilharia__list:hover {
+  transform: scale(1.05);
+}
+.videos__list:hover {
+  transform: scale(1.05);
+}
+.sobre__list:hover {
+  transform: scale(1.05);
 }
 
-a {
+.link__nav {
   font-family: "Nerko One", cursive;
-  text-align: center;
-  color: whitesmoke;
+  color: #f4f4f4;
+  padding: 1rem;
   text-decoration: none;
-  padding: 2rem;
-  margin-right: 20px;
   line-height: 40px;
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 500;
   background-image: linear-gradient(to right, black, rgb(247, 76, 227));
-  border: 4px solid black;
+  border: 3px solid #888;
   border-radius: 9px;
+  list-style: none;
 }
 
-a:hover {
+.link__nav:hover {
   color: rgb(208, 95, 183);
 }
 
@@ -71,11 +82,14 @@ a:hover {
   margin-bottom: 20px;
   font-family: "Roboto Mono", monospace;
   color: #888;
+  text-shadow: 2px 2px 0px #fff, -2px 2px 0px #fff, 2px -2px 0px #fff,
+    -2px -2px 0px #fff, 2px 0px 0px #fff, 0px 2px 0px #fff, -2px 0px 0px #fff,
+    0px -2px 0px #fff;
 }
 
 .mensalistas__grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 cards por linha */
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
 
@@ -121,8 +135,17 @@ a:hover {
   margin-top: 200px;
 }
 
-.tabela-jogadores__title {
-  color: #fff;
+.tabela__jogadores__title {
+  margin-top: 150px;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-family: "Roboto Mono", monospace;
+  color: #888;
+  text-shadow: 2px 2px 0px #fff, -2px 2px 0px #fff, 2px -2px 0px #fff,
+    -2px -2px 0px #fff, 2px 0px 0px #fff, 0px 2px 0px #fff, -2px 0px 0px #fff,
+    0px -2px 0px #fff;
+  margin-bottom: 50px;
 }
 
 .tabela-jogadores {
@@ -134,7 +157,7 @@ a:hover {
 
 .tabela-jogadores__head,
 .tabela-jogadores__cell {
-  border: 1px solid #ddd;
+  border: 2px solid black;
   padding: 10px;
   text-align: center;
 }
@@ -160,4 +183,77 @@ a:hover {
   text-align: center;
   font-size: 24px;
   margin-bottom: 20px;
+}
+
+.videos {
+  width: 100%;
+  height: 100%;
+}
+
+.videos__titulo {
+  margin-top: 150px;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-family: "Roboto Mono", monospace;
+  color: #888;
+  text-shadow: 2px 2px 0px #fff, -2px 2px 0px #fff, 2px -2px 0px #fff,
+    -2px -2px 0px #fff, 2px 0px 0px #fff, 0px 2px 0px #fff, -2px 0px 0px #fff,
+    0px -2px 0px #fff;
+}
+.video__frame {
+  margin: 100px 0 100px 80px;
+  padding: 50px;
+}
+
+.about__tittle {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-family: "Roboto Mono", monospace;
+  color: #888;
+  text-shadow: 2px 2px 0px #fff, -2px 2px 0px #fff, 2px -2px 0px #fff,
+    -2px -2px 0px #fff, 2px 0px 0px #fff, 0px 2px 0px #fff, -2px 0px 0px #fff,
+    0px -2px 0px #fff;
+}
+
+.texto__about {
+  font-family: "Roboto Mono", monospace;
+  font-size: 25px;
+
+  background-color: rgb(172, 108, 172, 0.4);
+  border: 3px solid black;
+}
+.button__sobre {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.button {
+  background-color: #000;
+  color: #f4f4f4;
+  padding: 40px;
+  border-radius: 9px;
+  border: 2px solid #f4f4f4;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+}
+
+.button__canal {
+  margin-right: 40px;
+}
+
+.button:hover {
+  background-color: rgb(172, 108, 172, 0.4);
+  color: #fff;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
 }

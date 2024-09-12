@@ -13,12 +13,21 @@
     <div class="page">
       <h1>Seja bem vindo a melhor <span> Pelada da Inglaterra</span></h1>
       <header>
-        <nav>
-          <img class="image_header" src="" alt="" />
-          <a href="#mensalistas">Mensalistas</a>
-          <a href="#artilharia"> Artilharia</a>
-          <a href="#videos">Videos</a>
-          <a href="#sobre">Sobre nós</a>
+        <nav class="nav__menu">
+          <ul class="nav__ul">
+            <li class="list__nav mensal__list">
+              <a class="link__nav" href="#mensalistas">Mensalistas</a>
+            </li>
+            <li class="list__nav artilharia__list">
+              <a class="link__nav" href="#artilharia"> Artilharia</a>
+            </li>
+            <li class="list__nav videos__list">
+              <a class="link__nav" href="#videos">Videos</a>
+            </li>
+            <li class="list__nav sobre__list">
+              <a class="link__nav" href="#sobre">Sobre nós</a>
+            </li>
+          </ul>
         </nav>
       </header>
       <main>
@@ -173,9 +182,7 @@
           </div>
         </section>
         <section id="artilharia" class="artilharia">
-          <h2 class="tabela-jogadores__title">
-            Tabela de Jogadores de Futebol
-          </h2>
+          <h4 class="tabela__jogadores__title">Tabela de Jogadores</h4>
           <table class="tabela-jogadores">
             <thead>
               <tr>
@@ -495,8 +502,40 @@
             </tbody>
           </table>
         </section>
-        <section id="videos" class="videos"></section>
-        <section id="sobre" class="sobre"></section>
+        <div class="video__section">
+          <section id="videos" class="videos">
+            <h2 class="videos__titulo">Videos novos toda quarta</h2>
+            <iframe
+              class="video__frame"
+              width="720"
+              height="480"
+              src="https://www.youtube.com/embed/rzc1WFYMG7k?si=3QIJddIpbesMNSBi"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            >
+            </iframe>
+          </section>
+        </div>
+        <section id="sobre" class="sobre">
+          <h2 class="about__tittle">Sobre nós</h2>
+          <p class="texto__about">
+            Somos um grupo de brasileiros imigrantes , Temos o Futebol como
+            Hobbie . Seja muito bem vindo a melhor pelada de futebol de
+            Liverpool e região ( Entre brasileiros rs), Disputada todas as
+            quartas feiras as 20:00 em Prescot-Liverpool. Seja muito bem vindo
+            ao nosso site.
+          </p>
+          <div class="image">
+            <img src="" alt="Time Preto" />
+            <img src="" alt="Time Rosa" />
+          </div>
+          <div class="button__sobre">
+            <a href="http://google.com" class="button">Quero Jogar</a>
+          </div>
+        </section>
       </main>
     </div>
   </body>
