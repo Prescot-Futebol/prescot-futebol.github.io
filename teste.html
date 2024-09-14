@@ -33,7 +33,11 @@
     .player img {
       border-radius: 10px;
       border: 2px solid #2e8b57;
+      width: 200px;
+      height: 200px;
+      object-fit: cover; /* Garante que as imagens se ajustem ao tamanho sem distorção */
     }
+
 
     /* Ajuste do iframe para ter uma altura adequada */
     .video-container {
@@ -94,8 +98,8 @@
 <section class="container my-5">
   <h2 class="text-center">Jogadores</h2>
   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
+    <div class="carousel-inner" id="carousel-jogadores">
+      <!-- <div class="carousel-item active">
         <div class="d-flex justify-content-center">
           <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" class="d-block mx-3" alt="Jogador 1">
           <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" class="d-block mx-3" alt="Jogador 2">
@@ -108,33 +112,7 @@
           <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" class="d-block mx-3" alt="Jogador 5">
           <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" class="d-block mx-3" alt="Jogador 6">
         </div>
-      </div>
-      <div class="carousel-item">
-        <div class="d-flex justify-content-center">
-          <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" class="d-block mx-3" alt="Jogador 7">
-          <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" class="d-block mx-3" alt="Jogador 8">
-          <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" class="d-block mx-3" alt="Jogador 9">
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="d-flex justify-content-center">
-          <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" class="d-block mx-3" alt="Jogador 10">
-          <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" class="d-block mx-3" alt="Jogador 11">
-          <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" class="d-block mx-3" alt="Jogador 12">
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="d-flex justify-content-center">
-          <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" class="d-block mx-3" alt="Jogador 13">
-          <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" class="d-block mx-3" alt="Jogador 14">
-          <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" class="d-block mx-3" alt="Jogador 15">
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="d-flex justify-content-center">
-          <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" class="d-block mx-3" alt="Jogador 16">
-        </div>
-      </div>
+      </div> -->
     </div>
     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -146,6 +124,8 @@
     </a>
   </div>
 </section>
+
+<script src="teste.js"></script>
 
 </body>
 </html>
